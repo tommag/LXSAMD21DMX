@@ -26,7 +26,7 @@ LXSAMD21DMX SAMD21DMX;
 
 // **************************** SERCOMn_Handler  ***************
 
-void SERCOM4_Handler()
+void SERCOM5_Handler()
 {
   SAMD21DMX.IrqHandler();
 }

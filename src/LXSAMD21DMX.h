@@ -219,9 +219,9 @@ extern LXSAMD21DMX SAMD21DMX;
 	       if you use a different SERCOM
 */
 
-#define PIN_DMX_RX (5ul)
-#define PIN_DMX_TX (4ul)
-#define PAD_DMX_RX SERCOM_RX_PAD_3
+#define PIN_DMX_RX (19ul)
+#define PIN_DMX_TX (30ul)
+#define PAD_DMX_RX SERCOM_RX_PAD_0
 #define PAD_DMX_TX UART_TX_PAD_2
 
 // Set to PIO_SERCOM or PIO_SERCOM_ALT
@@ -229,8 +229,8 @@ extern LXSAMD21DMX SAMD21DMX;
 #define MUX_DMX_TX PIO_SERCOM_ALT
 
 // SERCOMn is pointer to memory address where SERCOM registers are located.
-#define DMX_SERCOM SERCOM4
+#define DMX_SERCOM SERCOM5
 // sercomN is C++ wrapper for SERCOMn (passed to UART constructor)
-#define DMX_sercom sercom4
+#define DMX_sercom sercom5
 
 #endif // ifndef LXSAM21_DMX_H
